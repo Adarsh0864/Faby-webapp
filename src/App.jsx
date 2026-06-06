@@ -454,7 +454,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero-illustration anim-2">
-          <FamilyIllustration />
+          <img src="/hero-family-new.png" alt="Family" className="hero-img" />
         </div>
       </div>
     </section>
