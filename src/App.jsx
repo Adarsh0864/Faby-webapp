@@ -614,21 +614,13 @@ function CTA() {
 function Footer() {
   return (
     <footer className="footer" role="contentinfo">
-      <div className="footer-inner">
+      <div className="footer-inner" style={{ justifyContent: 'center', textAlign: 'center' }}>
         <div className="footer-left">
-          <div className="footer-logo">
+          <div className="footer-logo" style={{ justifyContent: 'center' }}>
             FABY
           </div>
           <p>© 2024 FABY Healthcare. All rights reserved.</p>
         </div>
-        <ul className="footer-links">
-          <li><a href="#">Sitemap</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Research Ethics</a></li>
-          <li><a href="#">Accessibility</a></li>
-        </ul>
       </div>
     </footer>
   );
