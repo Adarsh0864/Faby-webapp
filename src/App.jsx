@@ -531,7 +531,7 @@ function Features() {
     {
       Icon: IconUsers,
       title: 'Parenting Community',
-      desc: 'Connect with other parents and pediatric experts. Share experiences, ask questions, and find support in a safe, moderated environment.',
+      desc: 'Connect with other parents. Share experiences, ask questions, and find support in a safe, moderated environment.',
     },
     {
       Icon: IconUser,
@@ -687,7 +687,7 @@ function AppInterface() {
     { src: '/mile.png',      label: 'Milestone Tracking',    Icon: IconMilestone, desc: 'Log and celebrate every developmental milestone — physical, cognitive, and emotional — in one place.' },
     { src: '/Vacci.png',     label: 'Vaccination Schedule',  Icon: IconVaccine,   desc: 'Never miss a dose. Automated schedules and reminders for all essential childhood immunizations.' },
     { src: '/export.png',    label: 'Export & Share',        Icon: IconExport,    desc: 'Share your child\'s health summary with doctors or family in a clean, exportable format.' },
-    { src: '/Talk.png',      label: 'Parenting Community',   Icon: IconCommunity, desc: 'Connect with verified parents and pediatric experts. Ask questions, share experiences, find support.' },
+    { src: '/Talk.png',      label: 'Parenting Community',   Icon: IconCommunity, desc: 'Connect with verified parents. Ask questions, share experiences, find support.' },
   ];
 
   const startTimer = () => {
