@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './index.css';
+import { heroImage } from './heroBase64';
 
 /* ─── FAMILY ILLUSTRATED SVG ─────────────────────────── */
 function FamilyIllustration() {
@@ -454,7 +455,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero-illustration anim-2">
-          <img src="/hero-family-new.png" alt="Family" className="hero-img" />
+          <img src={heroImage} alt="Family" className="hero-img" />
         </div>
       </div>
     </section>
