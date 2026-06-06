@@ -419,9 +419,9 @@ function Navbar() {
           FABY
         </span>
         <ul className="navbar-links">
-          <li><a href="#features" className="active">Features</a></li>
+          <li><a href="#how-it-works" className="active">Features</a></li>
           <li><a href="#problems">Challenges</a></li>
-          <li><a href="#cta">About</a></li>
+          <li><a href="#features">About</a></li>
         </ul>
         <a href="#cta" className="btn-nav">Get Started</a>
       </div>
