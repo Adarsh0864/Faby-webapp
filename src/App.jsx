@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './index.css';
-import { heroImage } from './heroBase64';
+import heroImage from './assets/hero-family.png';
+import { homeImg, growTrackImg, mileImg, vacciImg, exportImg, talkImg } from './screenImages';
 
 /* ─── FAMILY ILLUSTRATED SVG ─────────────────────────── */
 function FamilyIllustration() {
@@ -683,12 +684,12 @@ function AppInterface() {
   const timerRef = useRef(null);
 
   const screens = [
-    { src: '/home.png',      label: 'Home Dashboard',       Icon: IconHome,      desc: 'Get a quick overview of upcoming vaccinations, recent milestones, and daily tips tailored to your child\'s age.' },
-    { src: '/GrowTrack.png', label: 'Growth Tracker',        Icon: IconGrowth,    desc: 'Visualize height and weight against WHO standards with beautiful charts and a comprehensive digital record.' },
-    { src: '/mile.png',      label: 'Milestone Tracking',    Icon: IconMilestone, desc: 'Log and celebrate every developmental milestone — physical, cognitive, and emotional — in one place.' },
-    { src: '/Vacci.png',     label: 'Vaccination Schedule',  Icon: IconVaccine,   desc: 'Never miss a dose. Automated schedules and reminders for all essential childhood immunizations.' },
-    { src: '/export.png',    label: 'Export & Share',        Icon: IconExport,    desc: 'Share your child\'s health summary with doctors or family in a clean, exportable format.' },
-    { src: '/Talk.png',      label: 'Parenting Community',   Icon: IconCommunity, desc: 'Connect with verified parents. Ask questions, share experiences, find support.' },
+    { src: homeImg,      label: 'Home Dashboard',       Icon: IconHome,      desc: 'Get a quick overview of upcoming vaccinations, recent milestones, and daily tips tailored to your child\'s age.' },
+    { src: growTrackImg, label: 'Growth Tracker',        Icon: IconGrowth,    desc: 'Visualize height and weight against WHO standards with beautiful charts and a comprehensive digital record.' },
+    { src: mileImg,      label: 'Milestone Tracking',    Icon: IconMilestone, desc: 'Log and celebrate every developmental milestone — physical, cognitive, and emotional — in one place.' },
+    { src: vacciImg,     label: 'Vaccination Schedule',  Icon: IconVaccine,   desc: 'Never miss a dose. Automated schedules and reminders for all essential childhood immunizations.' },
+    { src: exportImg,    label: 'Export & Share',        Icon: IconExport,    desc: 'Share your child\'s health summary with doctors or family in a clean, exportable format.' },
+    { src: talkImg,      label: 'Parenting Community',   Icon: IconCommunity, desc: 'Connect with verified parents. Ask questions, share experiences, find support.' },
   ];
 
   const startTimer = () => {
