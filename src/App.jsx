@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import './index.css';
 import heroImage from './assets/hero-family.png';
 import { homeImg, growTrackImg, mileImg, vacciImg, exportImg, talkImg } from './screenImages';
+import PrivacyPolicy from './PrivacyPolicy';
 
 /* ─── FAMILY ILLUSTRATED SVG ─────────────────────────── */
 function FamilyIllustration() {
@@ -421,11 +423,11 @@ function Navbar() {
           FABY
         </span>
         <ul className="navbar-links">
-          <li><a href="#how-it-works" className="active">Features</a></li>
-          <li><a href="#problems">Challenges</a></li>
-          <li><a href="#features">About</a></li>
+          <li><a href="/#how-it-works" className="active">Features</a></li>
+          <li><a href="/#problems">Challenges</a></li>
+          <li><a href="/#features">About</a></li>
         </ul>
-        <a href="#cta" className="btn-nav">Get Started</a>
+        <a href="/#cta" className="btn-nav">Get Started</a>
       </div>
     </nav>
   );
@@ -622,6 +624,9 @@ function Footer() {
             FABY
           </div>
           <p>© 2024 FABY Healthcare. All rights reserved.</p>
+          <div style={{ marginTop: '12px' }}>
+            <Link to="/privacy-policy" style={{ color: 'var(--text-3)', fontSize: '14px', textDecoration: 'underline' }}>Privacy Policy</Link>
+          </div>
         </div>
       </div>
     </footer>
@@ -784,16 +789,27 @@ function AppInterface() {
 /* ════════════════════════════════════════
    ROOT APP
 ════════════════════════════════════════ */
+function Home() {
+  return (
+    <>
+      <Hero />
+      <ProblemStatement />
+      <Features />
+      <AppInterface />
+      <CTA />
+    </>
+  );
+}
+
 export default function App() {
   return (
     <>
       <Navbar />
       <main>
-        <Hero />
-        <ProblemStatement />
-        <Features />
-        <AppInterface />
-        <CTA />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
       </main>
       <Footer />
     </>
