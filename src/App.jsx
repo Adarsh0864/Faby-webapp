@@ -5,6 +5,7 @@ import heroImage from './assets/hero-family.png';
 import { homeImg, growTrackImg, mileImg, vacciImg, exportImg, talkImg } from './screenImages';
 import PrivacyPolicy from './PrivacyPolicy';
 import Support from './Support';
+import logoImg from './assets/logo.png';
 /* ─── FAMILY ILLUSTRATED SVG ─────────────────────────── */
 function FamilyIllustration() {
   return (
@@ -420,7 +421,7 @@ function Navbar() {
     <nav className="navbar" role="navigation" aria-label="Main navigation">
       <div className="navbar-inner">
         <span className="navbar-logo">
-          FABY
+          <img src={logoImg} alt="FABY Logo" style={{ height: '32px', width: 'auto' }} />
         </span>
         <ul className="navbar-links">
           <li><a href="/#how-it-works" className="active">Features</a></li>
@@ -621,7 +622,7 @@ function Footer() {
       <div className="footer-inner" style={{ justifyContent: 'center', textAlign: 'center' }}>
         <div className="footer-left">
           <div className="footer-logo" style={{ justifyContent: 'center' }}>
-            FABY
+            <img src={logoImg} alt="FABY Logo" style={{ height: '40px', width: 'auto' }} />
           </div>
           <p>© 2024 FABY Healthcare. All rights reserved.</p>
           <div style={{ marginTop: '12px', display: 'flex', gap: '16px', justifyContent: 'center' }}>
