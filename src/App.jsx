@@ -4,7 +4,7 @@ import './index.css';
 import heroImage from './assets/hero-family.png';
 import { homeImg, growTrackImg, mileImg, vacciImg, exportImg, talkImg } from './screenImages';
 import PrivacyPolicy from './PrivacyPolicy';
-
+import Support from './Support';
 /* ─── FAMILY ILLUSTRATED SVG ─────────────────────────── */
 function FamilyIllustration() {
   return (
@@ -624,8 +624,9 @@ function Footer() {
             FABY
           </div>
           <p>© 2024 FABY Healthcare. All rights reserved.</p>
-          <div style={{ marginTop: '12px' }}>
+          <div style={{ marginTop: '12px', display: 'flex', gap: '16px', justifyContent: 'center' }}>
             <Link to="/privacy-policy" style={{ color: 'var(--text-3)', fontSize: '14px', textDecoration: 'underline' }}>Privacy Policy</Link>
+            <Link to="/support" style={{ color: 'var(--text-3)', fontSize: '14px', textDecoration: 'underline' }}>Support</Link>
           </div>
         </div>
       </div>
@@ -809,6 +810,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/support" element={<Support />} />
         </Routes>
       </main>
       <Footer />
